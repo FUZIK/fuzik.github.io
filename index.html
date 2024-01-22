@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
@@ -21,11 +21,17 @@
 			text-align: right;
 		}
 		.NoKia {
-			height: 2.4em;
+			height: 3.6em;
 			display: block;
 			position: absolute;
 			left: -20px;
-  			padding-top: 1em;
+		}
+		.select-dis {
+		    -webkit-user-select: none;
+		    -khtml-user-select: none;
+		    -moz-user-select: none;
+		    -o-user-select: none;
+		    user-select: none;
 		}
 	</style>
 </head>
@@ -35,7 +41,7 @@
 			<div class="Home_contactsTitle__vLOUv">Андрюха 🍚</div>
 			<div class="Home_contactsSub__vLOUv">Android Developer</div>
 			<div>
-				<img class="NoKia" src="hand.png">
+				<img class="select-dis NoKia" src="langelo.png" draggable="false" onclick="window.open('https://wikipedia.org/wiki/The_Creation_of_Adam', '_blank')">
 				<h4>безработный. ищу работу. <br> желательно: kotlin; продукт;</h4></div>
 			<div class="Home_contactsPhone__vLOUv">телефон: <a target="_blank" href="https://t.me/KIZUF">t.me/KIZUF</a></div>
 			<div class="Home_contactsHub__vLOUv">github: <a target="_blank" href="https://github.com/FUZIK">github.com/FUZIK</a></div>
@@ -56,6 +62,9 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript">
+	documen.getElementByClass('NoKia').onclick = window.open('', '_blank')
+</script>
 </html>
 </body>
 </html>
